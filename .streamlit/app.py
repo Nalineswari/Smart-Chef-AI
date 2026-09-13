@@ -88,7 +88,7 @@ st.write("")
 col1, col2 = st.columns([1.3, 0.7], gap="large")
 
 with col1:
-    st.markdown("### 🧺 Step 1: Supercook-Style Pantry Builder")
+    st.markdown("### 🧺 Step 1: Smart Ingredient Selector")
     
     input_method = st.radio("Choose Input Method:", ["Interactive Pantry Drawers", "Upload Fridge Photo"], horizontal=True)
     
