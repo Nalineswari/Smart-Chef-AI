@@ -74,7 +74,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Impact Benchmark Metrics (Clarified Top Labels)
+# Impact Benchmark Metrics
 m1, m2, m3 = st.columns(3)
 with m1:
     st.markdown("""<div class="metric-card"><h3>SDG 3 & 12</h3><p>Aligned Global Goals</p></div>""", unsafe_allow_html=True)
@@ -97,7 +97,7 @@ with col1:
     uploaded_image = None
 
     if input_method == "Interactive Pantry Drawers":
-        st.caption("Click drawers below to quickly build your dish like Supercook:")
+        st.caption("Click drawers below to quickly select available ingredients:")
         
         # Category Drawers
         with st.expander("🥦 Vegetables & Fresh Greens", expanded=True):
@@ -181,8 +181,8 @@ with col2:
     
     family_size = st.slider("Portion Size (Servings):", min_value=1, max_value=6, value=2)
     
-    #st.markdown("### 💡 Smart Chef AI Add-ons")
-    #allow_missing = st.checkbox("Suggest 1 missing ingredient ", value=True)
+    st.markdown("### 💡 Smart Chef AI Add-ons")
+    allow_missing = st.checkbox("Suggest 1 missing ingredient if needed", value=True)
 
 st.divider()
 
