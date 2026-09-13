@@ -181,8 +181,8 @@ with col2:
     
     family_size = st.slider("Portion Size (Servings):", min_value=1, max_value=6, value=2)
     
-    st.markdown("### 💡 Smart Chef AI Add-ons")
-    allow_missing = st.checkbox("Suggest 1 missing ingredient if needed (Supercook Style)", value=True)
+    #st.markdown("### 💡 Smart Chef AI Add-ons")
+    #allow_missing = st.checkbox("Suggest 1 missing ingredient ", value=True)
 
 st.divider()
 
