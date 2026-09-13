@@ -101,13 +101,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Impact Counter Metrics (Styled Cards)
+# Impact Metrics (Benchmark Display)
 m1, m2, m3 = st.columns(3)
 with m1:
-    st.markdown("""<div class="metric-card"><h3>SDG 3 & 12</h3><p>Community Goals</p></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="metric-card"><h3>SDG 3 & 12</h3><p>Aligned Global Goals</p></div>""", unsafe_allow_html=True)
 with m2:
-    st.markdown("""<div class="metric-card"><h3>~400g Saved</h3><p>Avg Food Saved / Meal</p></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="metric-card"><h3>~400g / Meal</h3><p>Avg Benchmark Waste Saved</p></div>""", unsafe_allow_html=True)
 with m3:
-    st.markdown("""<div class="metric-card"><h3>~1.2 kg CO₂</h3><p>Prevented Footprint</p></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="metric-card"><h3>~1.2 kg CO₂</h3><p>Avg Benchmark Reduction</p></div>""", unsafe_allow_html=True)
 
 st.write("")
 st.write("")
@@ -192,10 +193,9 @@ if st.button("✨ Cook Smart with AI", type="primary"):
         - **Nutritional Grade:** [e.g., A+]
         - **Key Macro Breakdown:** [Calories, Protein, Carbs, Fiber per serving]
         
-        ### 🌿 Zero-Waste Impact Metrics
-        - **Food Waste Prevented:** ~[X] grams
-        - **Estimated CO₂ Footprint Saved:** ~[X] kg
-        ---
+       ### 🌿 Zero-Waste Impact Metrics
+- **Food Waste Prevented:** ~[Calculate exact weight in grams based on ingredients provided, e.g., 200g - 450g]
+- **Estimated CO₂ Footprint Saved:** ~[Calculate exact CO₂ saved in kg based on food items, e.g., 0.5kg - 1.5kg]
         """
         
         try:
